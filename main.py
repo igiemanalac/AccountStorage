@@ -195,7 +195,8 @@ account_name = Entry(window, font=('Courier', 14))
 username = Entry(window, font=('Courier', 14))
 email = Entry(window, font=('Courier', 14))
 password = Entry(window, show='*', font=('Courier', 14))
-submit = Button(window, text='Add Email',
+# TODO: Add trigger event on enter key.
+submit = Button(window, text='Add Account',
                 command=on_submit, font=('Courier', 14))
 
 entity_label.grid(columnspan=4, row=0)
@@ -211,6 +212,7 @@ password.grid(columnspan=4, row=4, column=1, padx=2, pady=2, sticky=W)
 
 submit.grid(columnspan=4, pady=4)
 
+# TODO: Put account information table into another window.
 account_name_table_header = Label(
     window, text='Account Name: ', font=('Courier', 14))
 username_table_header = Label(window, text='Username: ', font=('Courier', 14))
